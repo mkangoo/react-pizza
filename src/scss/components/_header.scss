@@ -1,5 +1,22 @@
 @import "../variables";
 
+@keyframes bounceIn {
+	0% {
+		transform: scale(0.3);
+		opacity: 0;
+	}
+	50% {
+		transform: scale(1.1);
+		opacity: 1;
+	}
+	70% {
+		transform: scale(0.9);
+	}
+	100% {
+		transform: scale(1);
+	}
+}
+
 .header {
 	border-bottom: 1px solid $gray-line;
 	padding: 40px 0;
@@ -12,9 +29,11 @@
 
 	&__logo {
 		display: flex;
+		cursor: pointer;
 
 		img {
 			margin-right: 15px;
+			animation: bounceIn 1s ease forwards;
 		}
 
 		h1 {
