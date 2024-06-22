@@ -25,6 +25,26 @@
 		display: flex;
 		align-items: center;
 		justify-content: space-between;
+
+		@media (max-width: 645px) {
+			display: flex;
+			.header__cart {
+				margin-left: 2px;
+			}
+			.header__logo {
+				p {
+					display: none;
+				}
+			}
+			.button {
+				span:first-child {
+					display: none;
+				}
+				&__delimiter {
+					display: none;
+				}
+			}
+		}
 	}
 
 	&__logo {
@@ -37,7 +57,7 @@
 		}
 
 		h1 {
-			color: #181818;
+			color: $black;
 			font-size: 24px;
 			letter-spacing: 1%;
 			text-transform: uppercase;
@@ -45,7 +65,7 @@
 		}
 
 		p {
-			color: #7b7b7b;
+			color: $gray;
 		}
 	}
 }
