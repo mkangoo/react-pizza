@@ -32,12 +32,17 @@
 				margin-left: 2px;
 			}
 			.header__logo {
+				border-bottom: 2px solid $black;
+				img {
+					display: none;
+				}
 				p {
 					display: none;
 				}
 			}
 			.button {
-				span:first-child {
+				min-width: 20px;
+				span {
 					display: none;
 				}
 				&__delimiter {
