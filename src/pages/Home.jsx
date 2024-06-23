@@ -1,4 +1,3 @@
-import Header from '../components/Header'
 import Categories from '../components/Categories'
 import PizzaBlock from '../components/PizzaBlock'
 import { Skeleton } from '../components/PizzaBlock/Skeleton'
@@ -24,10 +23,11 @@ function Home() {
                 console.error(err)
             }
         }
+        window.scrollTo(0, 0)
         fetchData()
     }, [])
     return (
-        <>
+        <div className="container">
             <div className="content__top">
                 <Categories />
                 <Sort />
@@ -38,7 +38,7 @@ function Home() {
                     ? [...Array(6)].map((_, index) => <Skeleton key={index} />)
                     : items.map(obj => <PizzaBlock key={obj.id} {...obj} />)}
             </div>
-        </>
+        </div>
     )
 }
 

@@ -69,12 +69,10 @@ function Cart() {
                 <div className="cart__bottom">
                     <div className="cart__bottom-details">
                         <span>
-                            {' '}
-                            Всего пицц: <b>2 шт.</b>{' '}
+                            Всего пицц: <b>2 шт.</b>
                         </span>
                         <span>
-                            {' '}
-                            Сумма заказа: <b>10 ₽</b>{' '}
+                            Сумма заказа: <b>10 ₽</b>
                         </span>
                     </div>
                     <div className="cart__bottom-buttons">
